@@ -1,0 +1,13 @@
+# POKRZ — Cyberpunk Casino
+# robots.txt
+
+User-agent: *
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+Sitemap: https://yourdomain.com/sitemap.xml
