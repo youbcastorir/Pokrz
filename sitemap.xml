@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://pokrz.com/</loc>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://pokrz.com/paniers.html</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url><loc>https://pokrz.com/panier.html?id=panier-tajine</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pokrz.com/panier.html?id=panier-salade</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pokrz.com/panier.html?id=panier-couscous</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pokrz.com/panier.html?id=panier-jus</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://pokrz.com/panier.html?id=panier-famille</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pokrz.com/panier.html?id=panier-soupe</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://pokrz.com/panier.html?id=panier-fruits-saison</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://pokrz.com/panier.html?id=panier-petit-dejeuner</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+
+  <url>
+    <loc>https://pokrz.com/faq.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://pokrz.com/contact.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://pokrz.com/blog.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url><loc>https://pokrz.com/blog/comment-choisir-panier-marrakech.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://pokrz.com/blog/panier-tajine-recette-guide.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://pokrz.com/blog/couscous-vendredi-marrakech.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://pokrz.com/blog/avantages-panier-vs-marche.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://pokrz.com/blog/conserver-fruits-legumes-panier.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://pokrz.com/blog/panier-famille-budget-marrakech.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+
+</urlset>

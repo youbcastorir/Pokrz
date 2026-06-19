@@ -1,0 +1,28 @@
+{
+  "name": "POKRZ — Paniers Fruits & Légumes Frais Marrakech",
+  "short_name": "POKRZ",
+  "description": "Paniers de fruits et légumes frais livrés à Marrakech via WhatsApp",
+  "start_url": "/index.html",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#F7F1E6",
+  "theme_color": "#5C6B3D",
+  "lang": "fr",
+  "dir": "ltr",
+  "icons": [
+    {
+      "src": "https://images.unsplash.com/photo-1610832958506-aa56368176cf?w=192&q=80",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1610832958506-aa56368176cf?w=512&q=80",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any"
+    }
+  ],
+  "categories": ["food", "shopping", "lifestyle"]
+}

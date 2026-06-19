@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panier — POKRZ Marrakech</title>
+  <meta name="description" content="Commandez votre panier de fruits et légumes frais à Marrakech. Livraison rapide via WhatsApp.">
+  <link rel="canonical" href="https://pokrz.com/panier.html">
+  <meta name="theme-color" content="#5C6B3D">
+  <link rel="manifest" href="manifest.json">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,700;0,800;1,500&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <script id="product-schema" type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Panier frais",
+    "brand": { "@type": "Brand", "name": "POKRZ" },
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "MAD",
+      "availability": "https://schema.org/InStock",
+      "seller": { "@type": "Organization", "name": "POKRZ" }
+    }
+  }
+  </script>
+</head>
+<body>
+<div id="site-header-placeholder"></div>
+
+<main id="main-content">
+
+  <div class="page-head" style="padding-bottom:var(--space-2);">
+    <div class="wrap">
+      <nav class="breadcrumbs" aria-label="breadcrumb">
+        <a href="index.html">Accueil</a>
+        <span class="sep">›</span>
+        <a href="paniers.html">Nos Paniers</a>
+        <span class="sep">›</span>
+        <span id="bc-panier">—</span>
+      </nav>
+    </div>
+  </div>
+
+  <section class="section-tight">
+    <div class="wrap">
+      <div id="panier-root">
+        <div style="text-align:center;padding:var(--space-5) 0;color:var(--color-ink-soft);">
+          Chargement…
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--color-cream-deep);">
+    <div class="wrap">
+      <h2 style="margin-bottom:var(--space-3);">Paniers similaires</h2>
+      <div class="grid grid-3" id="related-grid"></div>
+    </div>
+  </section>
+
+</main>
+
+<div id="site-footer-placeholder"></div>
+<script src="assets/js/paniers.js"></script>
+<script src="assets/js/app.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const id = new URLSearchParams(location.search).get("id");
+  const p  = (typeof PKZ_PANIERS !== "undefined") && PKZ_PANIERS.find(x => x.id === id);
+  if (!p) return;
+  const bc = document.getElementById("bc-panier");
+  if (bc) bc.textContent = p.nom;
+
+  const schema = document.getElementById("product-schema");
+  if (schema) {
+    const s = JSON.parse(schema.textContent);
+    s.name = p.nom;
+    s.description = p.description;
+    s.image = p.image;
+    s.offers.price = p.tailles.M.prix;
+    schema.textContent = JSON.stringify(s);
+  }
+
+  document.title = `${p.nom} — POKRZ Marrakech`;
+  const desc = document.querySelector('meta[name="description"]');
+  if (desc) desc.setAttribute("content", `${p.nom} — ${p.description} Livraison à Marrakech via WhatsApp.`);
+});
+</script>
+</body>
+</html>

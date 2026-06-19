@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — POKRZ Marrakech</title>
+  <meta name="description" content="Contactez POKRZ pour vos paniers de fruits et légumes frais à Marrakech. Écrivez-nous sur WhatsApp ou par email.">
+  <link rel="canonical" href="https://pokrz.com/contact.html">
+  <meta name="theme-color" content="#5C6B3D">
+  <link rel="manifest" href="manifest.json">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,700;0,800;1,500&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div id="site-header-placeholder"></div>
+
+<main id="main-content">
+
+  <div class="page-head">
+    <div class="wrap">
+      <nav class="breadcrumbs" aria-label="breadcrumb">
+        <a href="index.html">Accueil</a>
+        <span class="sep">›</span>
+        <span>Contact</span>
+      </nav>
+      <h1>Contactez-nous</h1>
+      <p>Nous sommes là pour répondre à vos questions et prendre vos commandes</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="contact-grid">
+
+        <div>
+          <div class="contact-card">
+            <span class="icon">🟢</span>
+            <div>
+              <h3>Écrire sur WhatsApp</h3>
+              <p style="color:var(--color-ink-soft);font-size:.9rem;">Le plus rapide : réponse en quelques minutes</p>
+              <a href="https://wa.me/212612605737" target="_blank" rel="noopener" class="btn btn-primary btn-sm mt-2">
+                🟢 +212 612 605 737
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <span class="icon">📧</span>
+            <div>
+              <h3>Envoyer un email</h3>
+              <p style="color:var(--color-ink-soft);font-size:.9rem;">Pour les demandes et partenariats</p>
+              <a href="mailto:salatrir@gmail.com" class="btn btn-dark btn-sm mt-2">
+                salatrir@gmail.com
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <span class="icon">⏰</span>
+            <div>
+              <h3>Heures d'ouverture</h3>
+              <p style="color:var(--color-ink-soft);font-size:.9rem;">Du lundi au dimanche, de 7h à 21h.</p>
+            </div>
+          </div>
+
+          <h3 style="margin:var(--space-3) 0 var(--space-2);">Zones de livraison</h3>
+          <div style="display:flex;flex-wrap:wrap;gap:.5rem;">
+            <span class="area-pill">Guéliz</span>
+            <span class="area-pill">Hivernage</span>
+            <span class="area-pill">Médina</span>
+            <span class="area-pill">Targa</span>
+            <span class="area-pill">Sidi Ghanem</span>
+            <span class="area-pill">Palmeraie</span>
+            <span class="area-pill">Route de Casablanca</span>
+          </div>
+
+          <div class="map-frame">
+            <iframe
+              src="https://www.openstreetmap.org/export/embed.html?bbox=-8.05%2C31.59%2C-7.90%2C31.67&layer=mapnik&marker=31.6295%2C-7.9811"
+              title="Carte de Marrakech — POKRZ"
+              loading="lazy"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+
+        <div>
+          <h2 style="margin-bottom:var(--space-3);">Envoyer un message</h2>
+          <form class="contact-form" id="contact-form" novalidate>
+            <div>
+              <label for="f-name">Nom</label>
+              <input type="text" id="f-name" name="name" required placeholder="Votre nom">
+            </div>
+            <div>
+              <label for="f-email">Email</label>
+              <input type="email" id="f-email" name="email" placeholder="vous@exemple.com">
+            </div>
+            <div>
+              <label for="f-area">Votre quartier</label>
+              <select id="f-area" name="area">
+                <option value="">Sélectionnez votre quartier</option>
+                <option>Guéliz</option>
+                <option>Hivernage</option>
+                <option>Médina</option>
+                <option>Targa</option>
+                <option>Sidi Ghanem</option>
+                <option>Palmeraie</option>
+                <option>Route de Casablanca</option>
+                <option>Autre quartier</option>
+              </select>
+            </div>
+            <div>
+              <label for="f-msg">Votre message</label>
+              <textarea id="f-msg" name="message" rows="5" required placeholder="Votre message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">
+              🟢 Envoyer le message
+            </button>
+            <p style="font-size:.8rem;color:var(--color-ink-soft);margin-top:.5rem;">
+              WhatsApp s'ouvrira avec votre message prêt à envoyer.
+            </p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div id="site-footer-placeholder"></div>
+<script src="assets/js/paniers.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
